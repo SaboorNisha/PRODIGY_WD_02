@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('D:\\Prodigy_Tasks\\Stopwatch_WebApplication\\bg2.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background-image: url('D:\\Prodigy_Tasks\\Stopwatch_WebApplication\\bg.jpeg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    color: #fff; /* Ensures text color is readable against the background image */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #61dafb;
+    font-size: 2.5rem;
+}
+
+.stopwatch {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.buttons button {
+    padding: 12px 30px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+}
+
+#startPauseBtn {
+    background-color: #28a745; /* Green */
+}
+
+#resetBtn {
+    background-color: #dc3545; /* Red */
+}
+
+#lapBtn {
+    background-color: #ffc107; /* Yellow */
+}
+
+.buttons button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.buttons button:hover:not(:disabled) {
+    transform: translateY(-3px);
+}
+
+.lap-input {
+    margin-top: 20px;
+}
+
+#lapReason {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    box-sizing: border-box;
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.laps ul {
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.laps ul li {
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #ffc107;
+    font-weight: bold;
+}
