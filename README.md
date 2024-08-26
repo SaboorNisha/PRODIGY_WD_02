@@ -4,6 +4,10 @@
 
 A simple stopwatch web application built with HTML, CSS, and JavaScript. This project demonstrates basic web development skills and provides a tool for tracking time with additional features.
 
+![HTML](https://img.shields.io/badge/HTML-orange.svg)
+![CSS](https://img.shields.io/badge/CSS-blue.svg)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow.svg)
+
 ## 🌟 Features
 
 - 🕰️ **Start, Stop, and Reset** functionality
